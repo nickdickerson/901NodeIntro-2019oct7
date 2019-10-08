@@ -87,6 +87,7 @@
 
 1. Create a module / file called `constructor-band.js`
     * which allows you to create a new band by passing in a band name (string) and an array of band members (strings). 
+    * Do not use module.exports yet.
 
     Example usage: 
     ```javascript
@@ -145,14 +146,14 @@
 
 1. Add another prototype function for `hasMember` which uses Array.prototype.includes() to see if the array contains the passed in string name. Check MDN if you need help: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
-1. Make sure you use module.exports to export the Band function.
+2. Now after these functions, use module.exports to export the Band function.
 
-1. Create a `call-band.js` file which uses (requires) the `bands.js` module. Inside, create a band object similar to this:
+3. Create a `call-band.js` file which uses (requires) the `constructor-bands.js` module you just created. Inside `call-band.js` create a band object similar to this:
     ```javascript
     const beatles = new Band('The Beatles', ['John', 'Paul', 'George', 'Ringo']);
     ```
     
-1. Call each of the functions and log the output. 
+4. Call each of the functions and log the output. 
 
     Example for the first function:
 
@@ -160,7 +161,7 @@
     console.log(`beatles member count`, beatles.memberCount());
     ```
 
-1. Mark your work as complete and then work on the bonus
+5. Mark your work as complete and then work on the bonus
 
 ## Bonus
 
