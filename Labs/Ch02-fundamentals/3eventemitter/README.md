@@ -65,7 +65,11 @@ If you need additional help, ask your instructor or fellow students.
 4. Examine your output to see if it worked. Is the output in the right order? The order that you register events is important. Make sure that Clocking in, is before the function handler for Write Tests.
 
 1. Follow the same process to get the rest of the output as shown above - including printing stars at the beginning of the output.
+   
+2. Refer to the solution or ask instructor if you need additional help.
 
+1. Mark your work as complete before moving to the bonus.
+   
 ## Bonus #1
 
 1. If done before others, create another type of event called 'break'.
