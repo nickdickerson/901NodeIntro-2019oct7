@@ -3,9 +3,13 @@ const favicon = require('serve-favicon');
 const path = require('path');
 const lowercasePaths = require("express-lowercase-paths")
 const config = {port: 3746} ;
+//const bodyParser = require('body-parser');
+
 
 let app = express();
 
+app.use(express.json());
+//app.use(bodyParser.json());
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.use((req, res, next)=> {
@@ -30,6 +34,7 @@ app.get("/capitals", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
+	//console.log(req);
 	res.json(req.body);
 });
 

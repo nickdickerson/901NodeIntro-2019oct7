@@ -47,7 +47,7 @@ router.use(bodyParser.urlencoded({extended: true}));
 router.use(expressSession({
 	secret: config.sessions.secret,
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
 }));
 
 router.use(require("./middleware/sessions-promises"));

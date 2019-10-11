@@ -3,3 +3,5 @@ module.exports = function() {
 
     console.log(`current directory: ${__dirname}`);
 }
+
+console.log(`XXXcurrent running file: ${__filename}`);

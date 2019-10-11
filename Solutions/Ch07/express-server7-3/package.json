@@ -10,7 +10,6 @@
   "keywords": [
     "example"
   ],
- 
   "license": "WTFPL",
   "dependencies": {
     "express": "^4.15.2",

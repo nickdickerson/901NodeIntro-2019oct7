@@ -7,7 +7,7 @@ let app = express();
 
 app.use(function (req, res, next) {
     console.log('Time: %d', Date.now());
-    
+    //next(); //this is the call that makes the server respond, not sure about below comment
 });  
 
 // this middleware hangs the server, as next is not called

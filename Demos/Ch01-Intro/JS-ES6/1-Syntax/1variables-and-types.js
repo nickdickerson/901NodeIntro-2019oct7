@@ -23,6 +23,9 @@
             let z = 3.13; console.log(typeof z);
             let divideByZero = (z/+0);  console.log('(z/+0)=' + divideByZero);
                 divideByZero = (z/-0);  console.log('(z/-0)=' +divideByZero);
+                divideByZero = (z/0);  console.log('(z/0)=' +divideByZero);
+                divideByZero = (z/-1);  console.log('(z/-1)=' +divideByZero);
+                divideByZero = (z/-z);  console.log('(z/-z)=' +divideByZero);
 
             let bigNum = Number.MAX_VALUE; 
             console.log(bigNum);
